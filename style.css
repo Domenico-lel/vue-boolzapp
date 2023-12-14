@@ -38,11 +38,34 @@
     background-color: violet;
 }
 /* ************** */
+/* profile */
 #profile{
     height: 35%;
     width: 100%;
     background-color: coral;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+#my{
+    display: flex;
+    width: 65px;
+    align-items: center;
+    background-color: cornflowerblue;
+}
+
+#options{
+    display: flex;
+    justify-content: space-around;
+    width: 65px;
+    height: 30px;
+    align-items: center;
+    background-color: darkolivegreen;
+}
+
+/* profile */
+
 /* notification */
 #notification{
     height: 35%;
@@ -109,3 +132,8 @@
 /* contenitore di destra */
 
 /* stili contenitori "generali" */
+
+img{
+    height: 30px;
+    border-radius: 15px ;
+}
