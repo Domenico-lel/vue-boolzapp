@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+#point{
+    cursor: pointer;
+}
+
+img{
+    height: 30px;
+    border-radius: 15px ;
+}
+
 /* stili contenitori "generali" */
 #cont_green{
     height: 16vh;
@@ -104,6 +113,8 @@
     width: 85%;
     height: 100%;
     outline: none;
+    border-radius: 2px ;
+    border: 0;
 }
 #serch i{
     width: 15%;
@@ -132,8 +143,3 @@
 /* contenitore di destra */
 
 /* stili contenitori "generali" */
-
-img{
-    height: 30px;
-    border-radius: 15px ;
-}
