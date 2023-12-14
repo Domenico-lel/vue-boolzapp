@@ -43,11 +43,33 @@
     width: 100%;
     background-color: coral;
 }
+/* notification */
 #notification{
     height: 35%;
     width: 100%;
     background-color: #8EDAFC;
+    display: flex;
 }
+#notification_left{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#notification_right{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+}
+#notification_right a{
+    color: gray;
+}
+/* notification */
+
+/* serch */
 #serch{
     height: 30%;
     width: 100%;
@@ -68,6 +90,8 @@
     justify-content: center;
     color: gray;
 }
+/* serch */
+
 /* ************** */
 #macroblocco_cont_topleft{
     height: 80%;
