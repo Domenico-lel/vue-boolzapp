@@ -4,19 +4,18 @@
     box-sizing: border-box;
 }
 
-/* stili contenitori */
+/* stili contenitori "generali" */
 #cont_green{
-    height: 20vh;
-    width: 100%;
+    height: 16vh;
     background-color: #009688;
 }
 #cont_grey{
     background-color: #DADBD3;
-    height: 80vh;
-    width: 100%;
+    height: 84vh;
 }
 
 #cont_grande{
+    display: flex;
     height: 550px;
     background-color: blue;
     width: 1000px;
@@ -26,4 +25,16 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-/* stili contenitori */
+
+#cont_left{
+    width: 40%;
+    height: 100%;
+    background-color: red;
+}
+
+#cont_right{
+    height: 100%;
+    width: 70%;
+    background-color: green;
+}
+/* stili contenitori "generali" */
