@@ -37,7 +37,38 @@
     width: 100%;
     background-color: violet;
 }
-
+/* ************** */
+#profile{
+    height: 35%;
+    width: 100%;
+    background-color: coral;
+}
+#notification{
+    height: 35%;
+    width: 100%;
+    background-color: #8EDAFC;
+}
+#serch{
+    height: 30%;
+    width: 100%;
+    background-color:crimson;
+    display: flex;
+    padding: 3px;
+}
+#serch input{
+    width: 85%;
+    height: 100%;
+    outline: none;
+}
+#serch i{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+}
+/* ************** */
 #macroblocco_cont_topleft{
     height: 80%;
     width: 100%;
