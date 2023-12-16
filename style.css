@@ -132,6 +132,24 @@ img{
     width: 100%;
     background-color: pink;
 }
+
+#cont_chat{
+    height: 40px;
+    background-color: darkgoldenrod;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border: solid 0.5px #fff;
+}
+
+#info_user{
+    margin-left: 10px;
+}
+
+#info_user p{
+    color: gray;
+}
+
 /* contenitore di sinistra */
 
 /* contenitore di destra */
@@ -139,7 +157,50 @@ img{
     height: 100%;
     width: 70%;
     background-color: green;
+    overflow-y: auto;
 }
+
+#top_bar{
+    height: 38px;
+    width: 100%;
+    background-color: coral;
+    display: flex;
+    justify-content: space-between;
+}
+
+#obgets_topbar{
+    align-items: center;
+    display: flex;
+    background-color: yellow;
+}
+
+#obgets_topbar i{
+    padding-inline: 5px;
+    display: flex;
+    
+}
+
+#persona_selezionata{
+    width: 50%;
+    height: 100%;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+}
+
+#persona_selezionata div{
+    flex-direction: column;
+}
+
+#persona_selezionata img{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#persona_selezionata div p{
+    color: gray;
+}
+
 /* contenitore di destra */
 
 /* stili contenitori "generali" */
