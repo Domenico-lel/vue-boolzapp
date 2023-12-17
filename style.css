@@ -26,7 +26,7 @@ img{
 #cont_grande{
     display: flex;
     height: 550px;
-    background-color: blue;
+    background-color: #fff;
     width: 1000px;
     position: absolute;
     margin: 0 auto;
@@ -38,7 +38,6 @@ img{
 #cont_left{
     width: 40%;
     height: 100%;
-    background-color: red;
 }
 
 #macroblocco_cont_botleft{
@@ -51,17 +50,17 @@ img{
 #profile{
     height: 35%;
     width: 100%;
-    background-color: coral;
+    background-color: #EAEAEA;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-right: 0.5px solid #FAFAFA;
 }
 
 #my{
     display: flex;
     width: 65px;
     align-items: center;
-    background-color: cornflowerblue;
 }
 
 #options{
@@ -70,7 +69,6 @@ img{
     width: 65px;
     height: 30px;
     align-items: center;
-    background-color: darkolivegreen;
 }
 
 /* profile */
@@ -105,7 +103,7 @@ img{
 #serch{
     height: 30%;
     width: 100%;
-    background-color:crimson;
+    background-color:#FAFAFA;
     display: flex;
     padding: 3px;
 }
@@ -130,16 +128,14 @@ img{
 #macroblocco_cont_topleft{
     height: 80%;
     width: 100%;
-    background-color: pink;
 }
 
 #cont_chat{
     height: 40px;
-    background-color: darkgoldenrod;
     display: flex;
     align-items: center;
     padding-left: 10px;
-    border: solid 0.5px #fff;
+    border-bottom: solid 0.5px #FAFAFA;
 }
 
 #info_user{
@@ -162,7 +158,7 @@ img{
 #top_bar{
     height: 38px;
     width: 100%;
-    background-color: coral;
+    background-color: #EAEAEA;
     display: flex;
     justify-content: space-between;
 }
@@ -170,11 +166,10 @@ img{
 #obgets_topbar{
     align-items: center;
     display: flex;
-    background-color: yellow;
 }
 
 #obgets_topbar i{
-    padding-inline: 5px;
+    padding-inline: 7px;
     display: flex;
     
 }
@@ -182,7 +177,6 @@ img{
 #persona_selezionata{
     width: 50%;
     height: 100%;
-    background-color: blue;
     display: flex;
     align-items: center;
 }
@@ -208,12 +202,13 @@ img{
     display: block;
     background-image: url(img/whatsupp.jpg);
     background-size: contain;
+    padding-top: 40px;
 }
 
 #chattext{
     height: 40px;
     width: 100%;
-    background-color: yellowgreen;
+    background-color: #F3EEEA;
     display: flex;
     padding: 5px;
 }
@@ -241,6 +236,33 @@ img{
     align-items: center;
     justify-content: center;
 }
+
+/* stili chat */
+
+#miomex, #suomex{
+    width: 180px;
+    height: 35px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+}
+
+#miomex, #suomex > span{
+    font-size: 15px;
+}
+
+#miomex{
+    background-color: #D5F9BA;
+    margin-left: 390px;
+}
+
+#suomex{
+    background-color: lightgrey;
+    margin-left: 50px;
+}
+
+/* stili chat */
 
 /* contenitore di destra */
 
