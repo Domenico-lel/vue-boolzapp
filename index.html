@@ -50,36 +50,12 @@
                     </div>
                 </div>
                 <div id="macroblocco_cont_topleft">
-
-                    <div id="cont_chat">
-                        <img src="img/avatar_1.jpg" alt="Michele">
+                    <!-- blocco dinamico chat -->
+                    <div id="cont_chat" v-for="contact in contacts" :key="contact.name" @click="selectContact(contact)">
+                        <img :src="contact.avatar" :alt="contact.name">
                         <div id="info_user">
-                            <b>Michele</b>
-                            <p>ultimo messaggio inviato</p>
-                        </div>
-                    </div>
-
-                    <div id="cont_chat">
-                        <img src="img/avatar_2.jpg" alt="Fabio">
-                        <div id="info_user">
-                            <b>Fabio</b>
-                            <p>ultimo messaggio inviato</p>
-                        </div>
-                    </div>
-
-                    <div id="cont_chat">
-                        <img src="img/avatar_3.jpg" alt="Samuele">
-                        <div id="info_user">
-                            <b>Samuele</b>
-                            <p>ultimo messaggio inviato</p>
-                        </div>
-                    </div>
-
-                    <div id="cont_chat">
-                        <img src="img/avatar_4.jpg" alt="Alessandro B.">
-                        <div id="info_user">
-                            <b>Alessandro B.</b>
-                            <p>ultimo messaggio inviato</p>
+                          <b>{{ contact.name }}</b>
+                          <p>{{ contact.lastMessage }}</p>
                         </div>
                     </div>
 
@@ -150,8 +126,8 @@
     <div id="cont_grey"></div>
 
 
-
-
+j    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <script src="script.js"></script>
+
 </body>
 </html>
