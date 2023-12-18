@@ -59,17 +59,25 @@ new Vue({
         },
         
         sendMessage() {
-            // invia un messaggio ad ogni "enter"
-            const inputMessage = this.newMessageText.trim();
+            // condizione per NON poter inviare messaggi con solo spazi
+            if (this.newMessageText.trim() == '') return;
 
-            if (inputMessage !== "") {
-                const newMessage = { text: inputMessage, sender: 'You', style: '#miomex' };
+            // Aggiunge il messaggio dell'utente
+            this.messages[this.activeContact.name].push({
+                text: this.newMessageText,
+                sender: 'You',
+            });
 
-                if (this.activeContact) {
-                    this.messages[this.activeContact.name].push(newMessage);
-                }
+            // Pulisce l' input
+            this.newMessageText = ''
 
-            }
+            //risposta automatica dopo 1 secondo
+            setTimeout(() => {
+                this.messages[this.activeContact.name].push({
+                    text: 'Ok',
+                    sender: this.activeContact.name,
+                });
+            }, 1000)
         },
     },
 
