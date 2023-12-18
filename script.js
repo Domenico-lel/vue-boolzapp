@@ -65,7 +65,7 @@ new Vue({
                 return {
                     name: this.activeContact.name,
                     lastAccess: 'Ultimo accesso oggi alle 12:00',
-                    avatar: this.activeContact.avatar, // Assicurati che ogni contatto abbia una proprietà 'avatar'
+                    avatar: this.activeContact.avatar,
                 };
             } else {
                 return null;
