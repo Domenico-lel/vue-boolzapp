@@ -146,6 +146,10 @@ img{
     color: gray;
 }
 
+#cont_chat, #info_user p, b{
+    cursor: pointer;
+}
+
 /* contenitore di sinistra */
 
 /* contenitore di destra */
@@ -260,6 +264,7 @@ img{
 #miomex{
     background-color: #D5F9BA;
     margin-left: 390px;
+    margin-bottom: 10px;
 }
 
 #suomex{

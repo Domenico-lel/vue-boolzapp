@@ -49,12 +49,27 @@ new Vue({
             ]
         },
         activeContact: null,
+        newMessageText: '',
     },
 
     methods: {
         // metodo per selezionare il cotatto da visualizzare
         selectContact(contact) {
             this.activeContact = contact;
+        },
+        
+        sendMessage() {
+            // invia un messaggio ad ogni "enter"
+            const inputMessage = this.newMessageText.trim();
+
+            if (inputMessage !== "") {
+                const newMessage = { text: inputMessage, sender: 'You', style: '#miomex' };
+
+                if (this.activeContact) {
+                    this.messages[this.activeContact.name].push(newMessage);
+                }
+
+            }
         },
     },
 
@@ -64,7 +79,7 @@ new Vue({
             if (this.activeContact) {
                 return {
                     name: this.activeContact.name,
-                    lastAccess: 'Ultimo accesso oggi alle 12:00',
+                    lastAccess: 'Ultimo accesso oggi alle 12:37',
                     avatar: this.activeContact.avatar,
                 };
             } else {

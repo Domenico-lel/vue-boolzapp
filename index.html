@@ -86,12 +86,12 @@
                     <div v-if="activeContact">
                         <div v-for="message in messages[activeContact.name]" :key="message.text">
                             <div v-if="message.sender === 'You'">
-                                <div id="suomex">
+                                <div id="miomex">
                                     <span>{{ message.text }}</span>
                                 </div>
                             </div>
                             <div v-else>
-                                <div id="miomex">
+                                <div id="suomex">
                                     <span>{{ message.text }}</span>
                                 </div>
                             </div>
@@ -105,7 +105,8 @@
                         <i class="fa-regular fa-face-smile" style="color: #666666;"></i>
                     </div>
                     <div id="spaecial_con_chattext">
-                        <input type="text" placeholder="Scrivi un messaggio">
+                        <!-- implemento dell' invio del messaggio dinamico -->
+                        <input type="text" placeholder="Scrivi un messaggio" v-model="newMessageText" @keyup.enter="sendMessage">
                     </div>
                     <div id="smile-microphone">
                         <i class="fa-solid fa-microphone" style="color: #666666;"></i>
