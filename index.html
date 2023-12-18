@@ -65,13 +65,12 @@
             <div id="cont_right">
                 <div id="top_bar">
                     <div id="persona_selezionata">
-                        <img src="img/avatar_1.jpg" alt="">
-
-                        <div>
-                            <b>Michele</b>
-                            <p>Ultimo accesso oggi alle 12:00</p>
+                        <!-- blocco dinamico al selezionamento -->
+                        <img v-if="selectedPerson" :src="selectedPerson.avatar" alt="">
+                        <div v-if="selectedPerson">
+                            <b>{{ selectedPerson.name }}</b>
+                            <p>{{ selectedPerson.lastAccess }}</p>
                         </div>
-                
                     </div>
 
                     <div id="obgets_topbar">
@@ -83,25 +82,23 @@
                 </div>
 
                 <div id="sottocontenitore_chat">
-                    <div id="miomex">
-                        <span>
-                            Hai portato a spasso il cane?
-                        </span>
+                    <!-- chat dinamica -->
+                    <div v-if="activeContact">
+                        <div v-for="message in messages[activeContact.name]" :key="message.text">
+                            <div v-if="message.sender === 'You'">
+                                <div id="suomex">
+                                    <span>{{ message.text }}</span>
+                                </div>
+                            </div>
+                            <div v-else>
+                                <div id="miomex">
+                                    <span>{{ message.text }}</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-                    <div id="suomex">
-                        <span>
-                            Si
-                        </span>
-                    </div>
-
-                    <div id="miomex">
-                        <span>
-                            okok
-                        </span>
-                    </div>
-
                 </div>
+                
 
                 <div id="chattext">
                     <div id="smile-microphone">
@@ -125,8 +122,7 @@
 
     <div id="cont_grey"></div>
 
-
-j    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <script src="script.js"></script>
 
 </body>
