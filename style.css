@@ -25,9 +25,9 @@ img{
 
 #cont_grande{
     display: flex;
-    height: 550px;
+    height: 87%;
     background-color: #fff;
-    width: 1000px;
+    width: 70%;
     position: absolute;
     margin: 0 auto;
     top: 50%;
@@ -48,7 +48,7 @@ img{
 /* ************** */
 /* profile */
 #profile{
-    height: 35%;
+    height: 60px;
     width: 100%;
     background-color: #EAEAEA;
     display: flex;
@@ -79,6 +79,7 @@ img{
     width: 100%;
     background-color: #8EDAFC;
     display: flex;
+    padding: 10px;
 }
 #notification_left{
     width: 15%;
@@ -136,6 +137,12 @@ img{
     align-items: center;
     padding-left: 10px;
     border-bottom: solid 0.5px #FAFAFA;
+
+}
+
+#cont_chat:first-child{
+    margin-top: 20px;
+
 }
 
 #info_user{
@@ -156,11 +163,11 @@ img{
 #cont_right{
     height: 100%;
     width: 70%;
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 
 #top_bar{
-    height: 38px;
+    height: 60px;
     width: 100%;
     background-color: #EAEAEA;
     display: flex;
@@ -200,7 +207,7 @@ img{
 
 
 #sottocontenitore_chat{
-    height: calc(( 100% - 38px) - 40px);
+    height: calc(( 100% - 40px) - 60px);
     background-color: #fff;
     width: 100%;
     display: block;
@@ -254,7 +261,7 @@ img{
     border-radius: 10px;
     display: flex;
     align-items: center;
-    padding: 2px;
+    padding: 8px;
 }
 
 #miomex, #suomex > span{
@@ -263,7 +270,7 @@ img{
 
 #miomex{
     background-color: #D5F9BA;
-    margin-left: 390px;
+    margin-left: 630px;
     margin-bottom: 10px;
 }
 
